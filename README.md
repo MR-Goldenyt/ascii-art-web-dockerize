@@ -16,9 +16,15 @@ Bring your text to life with ASCII Art Web—a playful Go-powered web app that t
 git clone https://learn.reboot01.com/git/ymuhamma/ascii-art-web-stylize.git
 cd ascii-art-web-stylize
 
-# Get dependencies & launch the server
-go mod tidy
-go run main.go
+# Set up dockerized
+docker image build -f Dockerfile -t ascii-art-web-dockerized .
+docker images
+docker container run -p 8080:8080 --detach --name dockerized ascii-art-web-dockerized
+docker ps
+docker exec -it anwar2 /bin/bash
+
+# Inspect docker container metadata
+docker inspect dockerized
 ````
 
 Then, open your browser and go to [http://localhost:8080](http://localhost:8080). Enter your text, pick a font, and click **Generate** to see the magic!
