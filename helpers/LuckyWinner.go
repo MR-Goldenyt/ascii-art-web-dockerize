@@ -14,7 +14,7 @@ func LuckyWinner() (showImage bool, ImagePath string) {
 	
 	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
 
-	// 1% chance to show
+	// 10% chance to show
 	if len(images) > 0 && rng.Float64() < 0.1 {
 		return true, images[rng.Intn(len(images))]
 	}
@@ -32,3 +32,5 @@ func getImageList() []string {
 	})
 	return images
 }
+
+

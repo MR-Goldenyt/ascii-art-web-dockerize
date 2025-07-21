@@ -32,7 +32,7 @@ func PostArtHandler(tmpl *template.Template, fonts embed.FS) http.HandlerFunc {
 			Linecount int
 			Error     string
 
-			// 1% chance of an image showing up
+			// 10% chance of an image showing up
 			ShowImage bool
 			ImagePath string
 		}{

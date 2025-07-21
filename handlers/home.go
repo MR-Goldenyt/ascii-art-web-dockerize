@@ -32,7 +32,7 @@ func GetHomeHandler(tmpl *template.Template) http.HandlerFunc {
 			Result string
 			Error  string
 
-			// 1% chance of an image showing up
+			// 10% chance of an image showing up
 			ShowImage bool
 			ImagePath string
 		}{

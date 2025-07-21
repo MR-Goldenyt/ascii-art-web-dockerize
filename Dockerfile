@@ -13,3 +13,4 @@ CMD ["./main"]
 LABEL maintainers="ymuhamma, aalsafse, lm"
 LABEL version="2.1"
 LABEL description="a dockerized version of ascii-art-web-stylize"
+ 

@@ -13,8 +13,8 @@ Bring your text to life with ASCII Art Web—a playful Go-powered web app that t
 ````bash
 # Clone your project
 ```bash
-git clone https://learn.reboot01.com/git/ymuhamma/ascii-art-web-stylize.git
-cd ascii-art-web-stylize
+git clone https://learn.reboot01.com/git/ymuhamma/ascii-art-web-dockerize.git
+cd ascii-art-web-dockerize
 
 # Set up dockerized
 docker image build -f Dockerfile -t ascii-art-web-dockerized .
